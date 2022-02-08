@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bebas+Neue&family=Mukta&family=Poppins:ital,wght@0,100;0,200;1,600&family=Roboto&family=Roboto+Mono:wght@300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background: linear-gradient(white,pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container{
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    h1{
+      font-family: 'Poppins';
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .from-input{
+      position: relative;
+      margin-top: 40px;
+      input{
+        width: 100% ;
+        font-size: 16px;
+        border:none;
+        outline:none;
+        border-bottom: 1px solid #adadad;
+        font-family: 'Poppins';
+      }
+      span{
+        position: absolute;
+        width: 0%;
+        border-bottom: 2px solid blue;
+        left: 0;
+        bottom: 0;
+        transition: 0.5s ease;
+      }
+    }
+    .from-input input:focus ~ span{
+      width: 100%;
+    }
+    button{
+      width: 100%;
+      height: 40px;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+      background-color: blue;
+      color: rgb(255, 251, 253);
+      font-size: 18px;
+      font-weight: 0;
+      margin: 20px 0;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+    button:hover{
+      background-color: rgb(18, 18, 175);
+    }
+    .sign-up{
+      font-family: 'Poppins';
+      a{
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
